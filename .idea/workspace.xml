@@ -2,20 +2,93 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3f151e6-dd95-48cc-ab4b-e76dc108510a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/_posts/Git进阶篇idea终端启用Git-bash/123.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/_posts/Git进阶篇idea终端启用Git-bash/idea-plugins.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/_posts/Git进阶篇idea终端启用Git-bash/idea-terminal.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/_posts/Git进阶篇idea终端启用Git-bash/test_ok.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/_posts/Git进阶篇idea终端启用Git-bash.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/_posts/Git进阶篇之解决windows下每次需输入用户名密码问题.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/_posts/hexo在github上搭建个人博客系统.md" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/source/_posts/hello-world.md" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/archer" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/Gruntfile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/_config.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/languages/de.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/languages/default.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/languages/es.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/languages/fr.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/languages/ja.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/languages/ko.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/languages/nl.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/languages/no.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/languages/pt.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/languages/ru.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/languages/zh-CN.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/languages/zh-TW.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/layout/_partial/after-footer.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/layout/_partial/archive-post.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/layout/_partial/archive.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/layout/_partial/article.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/layout/_partial/footer.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/layout/_partial/gauges-analytics.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/layout/_partial/google-analytics.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/layout/_partial/head.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/layout/_partial/header.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/layout/_partial/mobile-nav.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/layout/_partial/post/category.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/layout/_partial/post/date.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/layout/_partial/post/gallery.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/layout/_partial/post/nav.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/layout/_partial/post/tag.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/layout/_partial/post/title.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/layout/_partial/sidebar.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/layout/_widget/archive.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/layout/_widget/category.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/layout/_widget/recent_posts.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/layout/_widget/tag.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/layout/_widget/tagcloud.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/layout/archive.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/layout/category.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/layout/index.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/layout/layout.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/layout/page.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/layout/post.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/layout/tag.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/scripts/fancybox.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/source/css/_extend.styl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/source/css/_partial/archive.styl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/source/css/_partial/article.styl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/source/css/_partial/comment.styl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/source/css/_partial/footer.styl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/source/css/_partial/header.styl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/source/css/_partial/highlight.styl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/source/css/_partial/mobile.styl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/source/css/_partial/sidebar-aside.styl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/source/css/_partial/sidebar-bottom.styl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/source/css/_partial/sidebar.styl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/source/css/_util/grid.styl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/source/css/_util/mixin.styl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/source/css/_variables.styl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/source/css/fonts/FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/source/css/fonts/fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/source/css/fonts/fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/source/css/fonts/fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/source/css/fonts/fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/source/css/images/banner.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/source/css/style.styl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/source/fancybox/blank.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/source/fancybox/fancybox_loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/source/fancybox/fancybox_loading@2x.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/source/fancybox/fancybox_overlay.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/source/fancybox/fancybox_sprite.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/source/fancybox/fancybox_sprite@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/source/fancybox/helpers/fancybox_buttons.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/source/fancybox/helpers/jquery.fancybox-buttons.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/source/fancybox/helpers/jquery.fancybox-buttons.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/source/fancybox/helpers/jquery.fancybox-media.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/source/fancybox/helpers/jquery.fancybox-thumbs.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/source/fancybox/helpers/jquery.fancybox-thumbs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/source/fancybox/jquery.fancybox.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/source/fancybox/jquery.fancybox.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/source/fancybox/jquery.fancybox.pack.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/landscape/source/js/script.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,16 +99,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="_config.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_config.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-569">
-              <caret line="42" column="23" lean-forward="false" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
@@ -47,6 +110,11 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>archer</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -67,6 +135,13 @@
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>false</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>false</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
@@ -103,11 +178,6 @@
               <item name="hexo-blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="hexo-blog" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="hexo-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hexo-blog" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -125,6 +195,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="H:\mywork\blog\hexo-blog\themes" />
       <recent name="H:\mywork\blog\hexo-blog\themes\archer\source\assets" />
     </key>
   </component>
@@ -235,27 +306,26 @@
       <updated>1574430803982</updated>
       <workItem from="1574430805264" duration="1670000" />
       <workItem from="1578729586488" duration="2185000" />
-      <workItem from="1578816122259" duration="3167000" />
+      <workItem from="1578816122259" duration="4850000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7022000" />
+    <option name="totallyTimeSpent" value="8705000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294893" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3294893" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3294893" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35854766" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -350,14 +420,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/archer/source/assets/8621eeb69059f82a21f7bde715dc069.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -417,14 +479,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/archer/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -445,6 +499,70 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-569">
           <caret line="42" column="23" lean-forward="false" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/archer/_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="17" column="10" lean-forward="true" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/archer/.eslintrc.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/archer/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-855">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/archer/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="0" column="82" lean-forward="false" selection-start-line="0" selection-start-column="76" selection-end-line="0" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/archer/dev/archer.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/archer/.prettierignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/archer/.prettierrc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
