@@ -1,5 +1,5 @@
 ---
-title: docker实战系列一
+title: docker实战系列一之docker环境搭建
 date: 2020-02-18 13:58:09
 tags: [docker, ci, gitlab, devops]
 ---
@@ -129,7 +129,10 @@ $ sudo yum install docker-ce docker-ce-cli containerd.io
 **step4 检查安装是否成功**
 ```
 $ docker -v
+$ docker version // 检查docker daemon进程
 ```
+>注意linux用户权限问题sudo groupadd docker  
+>sudo usermod -aG docker 用户名，vagrant创建的虚拟机用户名默认为vagrant
 
 **step5 启动docker服务**
 ```
