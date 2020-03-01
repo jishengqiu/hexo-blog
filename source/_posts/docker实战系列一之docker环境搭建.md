@@ -145,6 +145,110 @@ $ sudo docker run hello-world
 
 ![docker验证](dk1.png)
 
+## 使用`Vagrantfile`快速搭建docker环境
+每次需要一台linux的docker实验环境，都需要按照上面的步骤来安装docker，似乎有些笨重机械，能不能通过脚本来完成自动安装呢？下面介绍使用`Vagrantfile`来创建一台安装好docker的机器
+```
+$ mkdir docker-host
+$ cd docker-host
+$ cat Vagrantfile  // 将准备好的Vagrantfile放入当前目录
+## 注意以下是Vagrantfile的内容，boxes是一个数组，可以一次创建多台安装好docker的实验环境的linux机器
+## 刚兴趣的读者可以先学习下Vagrantfile的配置文件介绍
+
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.require_version ">= 1.6.0"
+
+boxes = [
+    {
+        :name => "docker-host",     # 注意修改
+        :eth1 => "192.168.205.13",  # 注意修改
+        :mem => "1024",
+        :cpu => "1",
+        :port => "6777"            # 指将虚拟机的80端口映射到本地window宿主机的6777端口
+                                   # 比如当前配置这样本地window使用浏览器就可以通过localhost:6777访问创建的虚拟机中的192.168.205.13:80
+                                   # 实质是port mapping的过程
+    }
+]
+Vagrant.configure(2) do |config|
+
+  config.vm.box = "centos/7"
+
+  boxes.each do |opts|
+      config.vm.define opts[:name] do |config|
+        config.vm.hostname = opts[:name]
+        config.vm.provider "vmware_fusion" do |v|
+          v.vmx["memsize"] = opts[:mem]
+          v.vmx["numvcpus"] = opts[:cpu]
+        end
+
+        config.vm.provider "virtualbox" do |v|
+          v.customize ["modifyvm", :id, "--memory", opts[:mem]]
+          v.customize ["modifyvm", :id, "--cpus", opts[:cpu]]
+        end
+
+        config.vm.network :private_network, ip: opts[:eth1]
+        config.vm.network :forwarded_port, guest: 80, host: opts[:port]
+      end
+  end
+      config.vm.synced_folder ".", "/vagrant", disabled: true   #需要disabled的理由是因为vagrant为我们创建的默认用户名是vagrant，它禁止vagrant目录映射
+      config.vm.synced_folder "./labs","/home/vagrant/labs"     # 将本地当前目录的lab文件夹映射到虚拟机内部的labs文件夹                                                  
+      config.vm.provision "shell",privileged:true, path: "./setup.sh"  #是指虚拟创建完成需要执行的外部脚本
+end
+
+$ cat setup.sh  //查看setup.sh文件内容
+
+#/bin/sh
+ 
+# install some tools
+sudo yum install -y git vim gcc glibc-static telnet bridge-utils
+ 
+# install docker
+curl -fsSL get.docker.com -o get-docker.sh
+sh get-docker.sh
+ 
+# start docker service
+sudo groupadd docker
+sudo usermod -aG docker vagrant
+sudo systemctl start docker
+ 
+rm -rf get-docker.sh
+
+
+$ vagrant up  // 启动虚拟机
+
+$ docker version //验证docker环境
+```
+现在准备实验环境的步骤简化为，第一步，创建工作目录；第二步，放入编辑好的配置文件；第三步，然后启动虚拟机；第四步，完成后验证`docker`的安装是否成功即可。
+
+
+## 使用第三方ssh工具远程vagrant创建的虚拟机
+使用`xshell`远程登录虚拟机`ssh -p 127.0.0.1:2222`
+![s1](s1.png)
+默认的用户名为`vagrant`
+![s2](s2.png)
+Password选项选不了，需要提供秘钥登录？上面的安装过程中根本没有提到秘钥文件，这可怎么办呢？原因在于`vagrant`创建的虚拟机默认允许的是私钥登录，查看ssh配置文件，如下图
+![s3](s3.png)
+
+具体步骤如下先在本地`docker-host`目录下，打开`bash`窗口，运行`vagrant ssh`进入到虚拟机内部，然后修改配置，重新服务。虚拟机内部的修改方式如下
+
+```
+   $ cd /etc/ssh
+   $ sudo vim sshd_config #开启密码访问
+   # To disable tunneled clear text passwords, change to no here!
+   PasswordAuthentication yes
+   #PermitEmptyPasswords no
+   #PasswordAuthentication no
+   #重启服务
+   $ sudo systemctl restart sshd.service
+```
+修改完毕后，再次使用xshell登录，默认用户名，密码都是vagrant
+![s4](s4.png)
+
+登录成功！查看docker安装是否成功
+![s5](s5.png)
+
+
 ## 小结
 本文主要介绍了，从零开始学习docker的环境搭建，通过动手实践，即使没有mac或者linux机器，也可以轻松拥有一个docker学习环境。下一篇，将介绍docker的基本使用。
 
