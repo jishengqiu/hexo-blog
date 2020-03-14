@@ -188,6 +188,79 @@ mysql> show databases;
 mysql>
 
 ```
-可以看到，persistent数据库依然存在，说明数据持久化正常。
+可以看到，persistent数据库依然存在，说明通过-v参数指定Volume可以达到数据持久化。
+
+
+##Bind Mounting
+上面讲的Data Volume是指将容器产生的数据持久化。在某些场景下，需要将本地的文件同步到容器中，容器在运行过程中能够读取到，从而使本地的文件内容跟容器中的文件一致。
+第一步，利用`nginx`制作一个自定义镜像`my-nginx`
+```
+[vagrant@docker-host ~]$mkdir my-nginx
+[vagrant@docker-host ~]cd  my-nginx
+[vagrant@docker-host my-nginx]touch Dockerfile  ##创建Dockerfile
+
+##Dockerfile的文件内容
+
+FROM nginx:1.16
+WORKDIR /usr/share/nginx/html
+COPY index.html index.html
+
+[vagrant@docker-host my-nginx]touch index.html  ##创建nginx的欢迎页面，用于替换默认的欢迎页面
+
+##index的文件内容
+
+hello docker!
+```
+
+第二步，创建启动容器web1，使用-p参数将容器内部80端口映射到宿主机`docker-host`的8011端口，这样就可以不用通过容器的ip加端口访问了
+```
+[vagrant@docker-host my-nginx]$ docker run --name web1 -p 8011:80 -d jishengqiu/my-nginx
+6f841a8653c445ec0679c92c19a4f591aaa80efe31ad6fe6cb3a19d7011d31ef
+[vagrant@docker-host my-nginx]$
+[vagrant@docker-host my-nginx]$
+[vagrant@docker-host my-nginx]$
+[vagrant@docker-host my-nginx]$
+[vagrant@docker-host my-nginx]$ docker ps
+CONTAINER ID        IMAGE                 COMMAND                  CREATED             STATUS              PORTS                  NAMES
+6f841a8653c4        jishengqiu/my-nginx   "nginx -g 'daemon of…"   5 seconds ago       Up 4 seconds        0.0.0.0:8011->80/tcp   web1
+[vagrant@docker-host my-nginx]$ curl 127.0.0.1:8011  
+hello docker
+```
+说明，本地的index.html文件，通过COPY的方式给到容器内部使用，但这并没有达到想要的效果，当本地的`index.html`文件改动，容器也是实时感知这样的变化呢？先停掉并删掉容器web1
+```
+[vagrant@docker-host my-nginx]$ docker rm -f web1
+web1
+[vagrant@docker-host my-nginx]$ docker ps
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+[vagrant@docker-host my-nginx]$
+```
+第三步，创建运行容器web2,使用-v参数指定同步路径
+```
+[vagrant@docker-host my-nginx]$ docker run --name web2 -v $(pwd):/usr/share/nginx/html -p 8011:80 -d jishengqiu/my-nginx
+a93c961303a63e5eb543a4a2272870acd6259dd9850827e16958039818b8c8d5
+[vagrant@docker-host my-nginx]$ curl 127.0.0.1:8011
+hello docker
+
+```
+第三步,修改本地宿主机的`index.html`，再次访问`nginx`，观察文件内容是否同步
+
+```
+[vagrant@docker-host my-nginx]$ cat index.html
+hello docker
+武汉加油，中国加油！
+[vagrant@docker-host my-nginx]$ curl 127.0.0.1:8011
+hello docker
+武汉加油，中国加油！
+[vagrant@docker-host my-nginx]$
+
+```
+
+说明提供-v参数，来绑定同步路径，可以达到容器能够实时获取到本地的改动。
+
+## 小结
+
+提供上面2个小节的演示数据持久化，docker容器为开发者提供很多的便利，比如开发程序员本地开发写代码自测，然后将代码同步给容器内部，模拟生产环境测试，返回预期效果给开发者。
+
+
 
 *如有错误，请指正*
